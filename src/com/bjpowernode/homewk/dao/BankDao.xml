@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.homewk.dao.BankDao">
+
+
+  <update id="out">
+    update t_bank set money = money - #{param2} where nid = #{param1}
+  </update>
+
+  <update id="in">
+    update t_bank set money = money + #{param2} where nid = #{param1}
+  </update>
+
+
+
+
+
+</mapper>
